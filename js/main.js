@@ -1,9 +1,8 @@
 /* Melkart Náutica · interactions */
 (() => {
-  // TODO: replace with the real contact details before publishing
   const CONFIG = {
-    whatsapp: '34600000000',            // international format, digits only
-    whatsappLabel: '+34 600 000 000',
+    whatsapp: '34606366895',            // international format, digits only
+    whatsappLabel: '+34 606 36 68 95',
     email: 'info@melkartnautica.com',
   };
 
