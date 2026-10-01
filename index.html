@@ -1,0 +1,549 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Melkart Náutica · Private catamaran charter in Mallorca &amp; the Bahamas</title>
+  <meta name="description" content="Melkart I, a 2022 Bali 4.6 catamaran for 10 guests with professional skipper. Summers in Portocolom, Mallorca. Winters in Nassau and the Exumas, Bahamas.">
+  <meta name="theme-color" content="#0c1a2b">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <meta property="og:title" content="Melkart Náutica · Melkart I">
+  <meta property="og:description" content="Private crewed catamaran charter. Mallorca in summer, the Bahamas in winter.">
+  <meta property="og:image" content="assets/img/hero.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300..700&family=Stack+Sans+Headline:wght@300..700&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/img/hero.webp">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="skip">Skip to content</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="nav" id="nav">
+    <div class="nav__bar">
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#yacht" data-i18n="nav.yacht">The yacht</a>
+        <a href="#plans" data-i18n="nav.plans">Charters</a>
+        <a href="#where" data-i18n="nav.where">Where is she?</a>
+        <a href="#rates" data-i18n="nav.rates">Rates</a>
+        <a href="#faq" data-i18n="nav.faq">FAQ</a>
+      </nav>
+      <a class="nav__logo" href="#top" aria-label="Melkart Náutica, home">
+        <img src="assets/img/logo-white.webp" alt="Melkart Náutica" width="900" height="320">
+      </a>
+      <div class="nav__end">
+        <div class="lang" role="group" aria-label="Language">
+          <button type="button" data-lang="en" aria-pressed="true">EN</button>
+          <button type="button" data-lang="es" aria-pressed="false">ES</button>
+        </div>
+        <a class="btn btn--light nav__cta" href="#book" data-i18n="cta.book">Book now</a>
+        <button class="nav__burger" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Menu"><span></span><span></span></button>
+      </div>
+    </div>
+    <div class="nav__mobile" id="mobile-menu" hidden>
+      <a href="#yacht" data-i18n="nav.yacht">The yacht</a>
+      <a href="#plans" data-i18n="nav.plans">Charters</a>
+      <a href="#where" data-i18n="nav.where">Where is she?</a>
+      <a href="#rates" data-i18n="nav.rates">Rates</a>
+      <a href="#faq" data-i18n="nav.faq">FAQ</a>
+      <a href="#book" class="btn btn--light" data-i18n="cta.book">Book now</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <div class="hero__media" aria-hidden="true">
+        <img src="assets/img/hero.webp" alt="" width="1672" height="941" fetchpriority="high">
+      </div>
+      <div class="hero__veil" aria-hidden="true"></div>
+      <div class="hero__content">
+        <p class="hero__kicker"><span data-i18n="hero.kicker">Mallorca · Bahamas</span><i></i></p>
+        <h1 class="hero__title" data-split data-i18n="hero.title">Two seas, one yacht, all yours</h1>
+        <p class="hero__sub" data-i18n="hero.sub">Melkart I is a 2022 Bali 4.6 catamaran for ten guests and a professional skipper. Summers in Mallorca, winters in the Bahamas.</p>
+      </div>
+
+      <form class="finder" id="finder" autocomplete="off">
+        <label class="finder__field">
+          <span data-i18n="finder.date">Date</span>
+          <input type="date" name="date" id="finder-date" required>
+        </label>
+        <label class="finder__field">
+          <span data-i18n="finder.plan">Charter</span>
+          <select name="plan">
+            <option value="week" data-i18n="plan.week">Week charter</option>
+            <option value="day" data-i18n="plan.day">Day charter</option>
+          </select>
+        </label>
+        <label class="finder__field">
+          <span data-i18n="finder.guests">Guests</span>
+          <select name="guests">
+            <option>2</option><option>3</option><option>4</option><option>5</option><option selected>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
+          </select>
+        </label>
+        <div class="finder__field finder__where" aria-live="polite">
+          <span data-i18n="finder.where">She'll be in</span>
+          <output id="finder-where">—</output>
+        </div>
+        <button class="btn btn--dark" type="submit"><span data-i18n="finder.go">Check dates</span></button>
+      </form>
+      <a class="hero__scroll" href="#about" aria-label="Scroll"><span></span></a>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="about section" id="about">
+      <div class="wrap about__grid">
+        <div class="about__text">
+          <p class="kicker" data-i18n="about.kicker">About us</p>
+          <h2 class="h2 reveal-words"><span data-i18n="about.h1">A new yacht and a closed price,</span> <em data-i18n="about.h2">with no surprises at the dock.</em></h2>
+          <p class="lead" data-i18n="about.p">Melkart Náutica was founded in 2022 around one boat. We run Melkart I as a private, skippered charter: the captain, fuel, cleaning and base-port fees are part of the day price, so you plan the coves, not the extras.</p>
+          <dl class="about__facts">
+            <div><dt data-i18n="about.f1">Built</dt><dd>2022</dd></div>
+            <div><dt data-i18n="about.f2">Guests</dt><dd>10 <small>+1</small></dd></div>
+            <div><dt data-i18n="about.f3">Certified</dt><dd data-i18n="about.f3v">CE A · Ocean</dd></div>
+          </dl>
+          <a class="link-arrow" href="#yacht"><span data-i18n="about.link">Meet Melkart I</span><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M6 4h6v6"/></svg></a>
+        </div>
+        <figure class="about__media">
+          <div class="about__img about__img--main" data-parallax="-0.08"><img src="assets/img/about.webp" alt="Guests relaxing on the foredeck of a Bali 4.6 off a Mediterranean old town" loading="lazy" width="1600" height="1132"></div>
+          <div class="about__img about__img--inset" data-parallax="0.12"><img src="assets/img/melkart-marina.webp" alt="Melkart I moored stern-to with her tender, name visible on the hull" loading="lazy" width="1400" height="991"></div>
+          <figcaption class="hand" data-i18n="about.cap">That's her: Melkart I</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ WHY ============ -->
+    <section class="why section">
+      <div class="wrap">
+        <header class="sec-head sec-head--center">
+          <p class="kicker" data-i18n="why.kicker">Why Melkart I</p>
+          <h2 class="h2" data-i18n="why.h">Everything aboard, one closed price</h2>
+        </header>
+        <div class="why__cols">
+          <article class="why__col">
+            <div class="why__icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64"><path class="d" d="M32 10v38M24 16h16M32 48c-9 0-15-6-17-12l5 2M32 48c9 0 15-6 17-12l-5 2"/><circle class="d" cx="32" cy="9" r="3"/><path class="d spark" d="M50 12l2 4 4 2-4 2-2 4-2-4-4-2 4-2z"/></svg>
+            </div>
+            <h3 data-i18n="why.1h">Skipper included</h3>
+            <p data-i18n="why.1p">A professional captain on every charter. Day charters include fuel, cleaning and base-port fees too.</p>
+          </article>
+          <article class="why__col">
+            <div class="why__icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64"><path class="d" d="M8 46h48M12 46V26h40v20M12 26l6-8h28l6 8"/><path class="d door" d="M36 26v20M36 26h12v20"/><path class="d" d="M18 34h10v6H18z"/></svg>
+            </div>
+            <h3 data-i18n="why.2h">Open Space living</h3>
+            <p data-i18n="why.2p">The aft glass door lifts away and joins saloon, galley and cockpit into one deck, with a lounge forward and a flybridge above.</p>
+          </article>
+          <article class="why__col">
+            <div class="why__icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64"><path class="d" d="M6 44c6 4 12 4 18 0s12-4 18 0 12 4 16 0"/><path class="d board" d="M14 38 46 18c4-2 7 1 4 4L20 42c-4 2-8-1-6-4z"/><path class="d" d="M44 10v14M40 12h8"/></svg>
+            </div>
+            <h3 data-i18n="why.3h">A full water garage</h3>
+            <p data-i18n="why.3p">3.8 m tender with 20 hp, two paddle boards, snorkel sets and a jellyfish-proof sea pool for safe swims at anchor.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PLANS (stacked panels) ============ -->
+    <section class="plans" id="plans" aria-label="Charters">
+      <article class="plan" style="--i:0">
+        <div class="plan__media"><img src="assets/img/sail-sunset.webp" alt="Bali 4.6 sailing at sunset" loading="lazy" width="1400" height="1925"></div>
+        <div class="plan__body">
+          <p class="plan__tag" data-i18n="plan1.tag">One day · 8 hours</p>
+          <h2 class="h2" data-i18n="plan1.h">Day Charter</h2>
+          <p data-i18n="plan1.p">Swim stops, lunch at anchor and the toys out, back by sunset. Everything included, nothing to calculate.</p>
+          <a class="btn btn--dark" href="#book" data-plan="day" data-i18n="cta.book">Book now</a>
+          <dl class="plan__rows">
+            <div><dt data-i18n="row.location">Location</dt><dd data-i18n="plan1.loc">Portocolom (May–Sep) · Nassau (Nov–Apr)</dd></div>
+            <div><dt data-i18n="row.capacity">Capacity</dt><dd data-i18n="plan1.cap">Up to 10 guests + skipper</dd></div>
+            <div><dt data-i18n="row.price">Price</dt><dd><strong>2,500 €</strong> <span data-i18n="plan1.unit">/ day, all-inclusive</span></dd></div>
+          </dl>
+        </div>
+      </article>
+      <article class="plan" style="--i:1">
+        <div class="plan__media"><img src="assets/img/sail-coast.webp" alt="Bali catamaran sailing along limestone cliffs" loading="lazy" width="1690" height="1080"></div>
+        <div class="plan__body">
+          <p class="plan__tag" data-i18n="plan2.tag">7 nights · June to September</p>
+          <h2 class="h2" data-i18n="plan2.h">Mallorca Week</h2>
+          <p data-i18n="plan2.p">From the natural harbour of Portocolom, minutes from the southeast coves: Cala Mondragó, Es Trenc, Cabrera.</p>
+          <a class="btn btn--dark" href="#book" data-plan="week" data-i18n="cta.book">Book now</a>
+          <dl class="plan__rows">
+            <div><dt data-i18n="row.location">Location</dt><dd data-i18n="plan2.loc">Portocolom, Mallorca</dd></div>
+            <div><dt data-i18n="row.capacity">Capacity</dt><dd data-i18n="plan2.cap">10 guests · 5 cabins</dd></div>
+            <div><dt data-i18n="row.price">Price</dt><dd><strong>11,200 – 12,400 €</strong> <span data-i18n="unit.week">/ week</span></dd></div>
+          </dl>
+        </div>
+      </article>
+      <article class="plan" style="--i:2">
+        <div class="plan__media"><img src="assets/img/hero.webp" alt="Catamaran at anchor over turquoise shallows" loading="lazy" width="1672" height="941" style="object-position:40% 50%"></div>
+        <div class="plan__body">
+          <p class="plan__tag" data-i18n="plan3.tag">7 nights · November to April</p>
+          <h2 class="h2" data-i18n="plan3.h">Bahamas Week</h2>
+          <p data-i18n="plan3.p">Based in Nassau for the North American high season, with the cays and sandbars of the Exumas a sail away.</p>
+          <a class="btn btn--dark" href="#book" data-plan="week" data-i18n="cta.book">Book now</a>
+          <dl class="plan__rows">
+            <div><dt data-i18n="row.location">Location</dt><dd data-i18n="plan3.loc">Nassau · Exumas, Bahamas</dd></div>
+            <div><dt data-i18n="row.capacity">Capacity</dt><dd data-i18n="plan2.cap">10 guests · 5 cabins</dd></div>
+            <div><dt data-i18n="row.price">Price</dt><dd><strong>11,200 – 12,400 €</strong> <span data-i18n="unit.week">/ week</span></dd></div>
+          </dl>
+        </div>
+      </article>
+    </section>
+
+    <!-- ============ CURVED GALLERY ============ -->
+    <section class="arc section" id="yacht">
+      <header class="sec-head sec-head--center wrap">
+        <p class="kicker" data-i18n="arc.kicker">Inside Melkart I</p>
+        <h2 class="h2" data-i18n="arc.h">Real photos of the real boat, from the helm to the last pillow</h2>
+      </header>
+      <div class="arc__stage" id="arc" aria-roledescription="carousel" aria-label="Photos of Melkart I">
+        <div class="arc__track">
+          <figure class="arc__card"><img src="assets/img/flybridge.webp" alt="Flybridge lounge and helm" loading="lazy"><figcaption data-i18n="g.fly">Flybridge</figcaption></figure>
+          <figure class="arc__card"><img src="assets/img/cabin-master.webp" alt="Double cabin with reading lights" loading="lazy"><figcaption data-i18n="g.cabin">Double cabin</figcaption></figure>
+          <figure class="arc__card"><img src="assets/img/foredeck-wide.webp" alt="Foredeck lounge with sunpads" loading="lazy"><figcaption data-i18n="g.fore">Foredeck lounge</figcaption></figure>
+          <figure class="arc__card"><img src="assets/img/salon.webp" alt="Saloon dining table" loading="lazy"><figcaption data-i18n="g.salon">Saloon</figcaption></figure>
+          <figure class="arc__card"><img src="assets/img/helm.webp" alt="Helm station on the flybridge" loading="lazy"><figcaption data-i18n="g.helm">Helm station</figcaption></figure>
+          <figure class="arc__card"><img src="assets/img/galley.webp" alt="Galley with gas hob and espresso pot" loading="lazy"><figcaption data-i18n="g.galley">Galley</figcaption></figure>
+          <figure class="arc__card"><img src="assets/img/cockpit.webp" alt="Aft cockpit with lifting glass door" loading="lazy"><figcaption data-i18n="g.cockpit">Cockpit</figcaption></figure>
+          <figure class="arc__card"><img src="assets/img/cabin-twin.webp" alt="Twin cabin" loading="lazy"><figcaption data-i18n="g.twin">Twin cabin</figcaption></figure>
+          <figure class="arc__card"><img src="assets/img/sidedeck.webp" alt="Wide side deck" loading="lazy"><figcaption data-i18n="g.side">Side deck</figcaption></figure>
+          <figure class="arc__card"><img src="assets/img/bath.webp" alt="En-suite bathroom" loading="lazy"><figcaption data-i18n="g.bath">En-suite</figcaption></figure>
+        </div>
+      </div>
+      <p class="arc__hint hand" aria-hidden="true" data-i18n="arc.hint">drag me</p>
+    </section>
+
+    <!-- ============ OCEAN MOMENTS ============ -->
+    <section class="moments" aria-label="Ocean moments">
+      <div class="moments__pin">
+        <span class="moments__word moments__word--l" data-i18n="mom.1">Ocean</span>
+        <div class="moments__frame">
+          <video class="moments__video" src="assets/video/promo.mp4" muted loop playsinline preload="metadata" poster="assets/img/sail-open.webp"></video>
+          <button class="moments__toggle" type="button" aria-label="Pause video"><svg viewBox="0 0 24 24" aria-hidden="true"><path class="pause" d="M8 5v14M16 5v14"/><path class="play" d="M7 5l12 7-12 7z"/></svg></button>
+        </div>
+        <span class="moments__word moments__word--r" data-i18n="mom.2">Moments</span>
+      </div>
+    </section>
+
+    <!-- ============ WHERE (GLOBE) ============ -->
+    <section class="where section" id="where">
+      <div class="wrap where__grid">
+        <div class="where__intro">
+          <p class="kicker" data-i18n="where.kicker">Where is Melkart I?</p>
+          <h2 class="h2" data-i18n="where.h">Pick a date. We'll show you which sea she's in.</h2>
+          <p class="lead" data-i18n="where.p">She follows the good weather: the Mediterranean in summer, the Caribbean in winter. Twice a year she crosses the Atlantic and can't be chartered.</p>
+
+          <div class="where__controls">
+            <label class="where__date">
+              <span data-i18n="where.date">Your date</span>
+              <input type="date" id="globe-date">
+            </label>
+            <button class="btn btn--ghost" type="button" id="globe-play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5l12 7-12 7z"/></svg><span data-i18n="where.play">Play the year</span></button>
+          </div>
+
+          <div class="status" id="globe-status" aria-live="polite">
+            <p class="status__date" id="st-date">—</p>
+            <p class="status__place" id="st-place">—</p>
+            <p class="status__season" id="st-season">—</p>
+            <p class="status__price" id="st-price"></p>
+            <a class="btn btn--dark status__cta" href="#book" id="st-cta" data-i18n="cta.request">Request these dates</a>
+          </div>
+        </div>
+
+        <div class="where__globe">
+          <div class="globe" id="globe" role="img" aria-label="Sketch globe showing Melkart I's position on the selected date"></div>
+          <p class="globe__note hand" data-i18n="where.drag">drag to spin the world</p>
+        </div>
+      </div>
+
+      <div class="wrap">
+        <div class="year" id="year" aria-label="Year at a glance">
+          <div class="year__bar" id="year-bar"></div>
+          <input class="year__range" type="range" min="0" max="364" step="1" id="year-range" aria-label="Day of the year">
+          <div class="year__months" id="year-months"></div>
+          <ul class="year__legend">
+            <li><i class="sw sw--high"></i><span data-i18n="season.high">High season</span></li>
+            <li><i class="sw sw--mid"></i><span data-i18n="season.mid">Mid season</span></li>
+            <li><i class="sw sw--low"></i><span data-i18n="season.low">Low season</span></li>
+            <li><i class="sw sw--cross"></i><span data-i18n="season.cross">Atlantic crossing, not available</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RATES ============ -->
+    <section class="rates section" id="rates">
+      <div class="wrap">
+        <header class="sec-head">
+          <p class="kicker" data-i18n="rates.kicker">Seasons &amp; rates</p>
+          <h2 class="h2" data-i18n="rates.h">Weekly rates follow each hemisphere's season</h2>
+        </header>
+        <div class="rates__grid">
+          <article class="rate-card" data-base="med">
+            <header>
+              <h3 data-i18n="rates.med">Mediterranean</h3>
+              <p data-i18n="rates.medbase">Base: Portocolom, Mallorca</p>
+            </header>
+            <ul>
+              <li data-season="med-high"><span><b data-i18n="season.high">High season</b><small data-i18n="rates.mh">20 Jun – 31 Aug</small></span><strong>12,400 €</strong></li>
+              <li data-season="med-mid"><span><b data-i18n="season.mid">Mid season</b><small data-i18n="rates.mm">1 – 19 Jun · September</small></span><strong>11,200 €</strong></li>
+              <li data-season="med-low"><span><b data-i18n="season.low">Low season</b><small data-i18n="rates.ml">May · depending on the crossing's arrival</small></span><strong>8,800 €</strong></li>
+            </ul>
+          </article>
+          <article class="rate-card" data-base="bah">
+            <header>
+              <h3 data-i18n="rates.bah">Bahamas</h3>
+              <p data-i18n="rates.bahbase">Base: Nassau · Exumas</p>
+            </header>
+            <ul>
+              <li data-season="bah-high"><span><b data-i18n="season.high">High season</b><small data-i18n="rates.bh">20 Dec – 30 Apr · Christmas, New Year, Spring Break</small></span><strong>12,400 €</strong></li>
+              <li data-season="bah-mid"><span><b data-i18n="season.mid">Mid season</b><small data-i18n="rates.bm">1 Nov – 19 Dec · Thanksgiving</small></span><strong>11,200 €</strong></li>
+            </ul>
+          </article>
+          <article class="rate-card rate-card--day">
+            <header>
+              <h3 data-i18n="plan1.h">Day Charter</h3>
+              <p data-i18n="rates.dayall">All year, at either base</p>
+            </header>
+            <p class="rate-card__big">2,500 €</p>
+            <p data-i18n="rates.dayinc">Skipper, fuel, cleaning and base-port fees included. Up to 10 guests.</p>
+          </article>
+        </div>
+        <p class="rates__note" data-i18n="rates.note">Weekly rates per boat, professional skipper included. October and May are blocked for the Atlantic crossings.</p>
+      </div>
+    </section>
+
+    <!-- ============ COMFORT COLLAGE ============ -->
+    <section class="comfort" aria-labelledby="comfort-h">
+      <div class="comfort__stage">
+        <figure class="cimg cimg--1" data-speed="0.35"><img src="assets/img/cabin-pillow.webp" alt="" loading="lazy"><figcaption data-i18n="c.1">Four double cabins</figcaption></figure>
+        <figure class="cimg cimg--2" data-speed="-0.25"><img src="assets/img/galley-wide.webp" alt="" loading="lazy"><figcaption data-i18n="c.2">615 L fridge &amp; freezer</figcaption></figure>
+        <figure class="cimg cimg--3" data-speed="0.55"><img src="assets/img/foredeck.webp" alt="" loading="lazy"><figcaption data-i18n="c.3">Rigid foredeck lounge</figcaption></figure>
+        <figure class="cimg cimg--4" data-speed="-0.45"><img src="assets/img/wheel.webp" alt="" loading="lazy"><figcaption data-i18n="c.4">Garmin with radar</figcaption></figure>
+        <figure class="cimg cimg--5" data-speed="0.2"><img src="assets/img/salon-chairs.webp" alt="" loading="lazy"><figcaption data-i18n="c.5">Dining for ten</figcaption></figure>
+        <figure class="cimg cimg--6" data-speed="-0.6"><img src="assets/img/boom.webp" alt="" loading="lazy"><figcaption data-i18n="c.6">Bimini over the flybridge</figcaption></figure>
+        <div class="comfort__center">
+          <p class="kicker" data-i18n="comfort.kicker">Luxury. Comfort. Adventure.</p>
+          <h2 class="h2" id="comfort-h" data-i18n="comfort.h">Comfort of a villa, freedom of the sea</h2>
+          <a class="btn btn--dark" href="#book" data-i18n="comfort.cta">Reserve your week</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SPEC DRAWING ============ -->
+    <section class="spec section" id="specs">
+      <div class="wrap">
+        <header class="sec-head sec-head--split">
+          <h2 class="h2" data-i18n="spec.h">Bali 4.6, built by Catana Group in France</h2>
+          <p class="lead" data-i18n="spec.p">Designed by Xavier Faÿ around Olivier Poncin's Open Space concept. CE Category A for ocean passages, which is how she crosses the Atlantic every year.</p>
+        </header>
+        <div class="spec__draw" role="img" aria-label="Line drawing of the Bali 4.6 in profile with its main dimensions">
+          <div class="spec__trace" id="spec-trace"></div>
+          <svg class="spec__dims" viewBox="0 0 340 470" aria-hidden="true">
+            <path class="dim" d="M50 446H283M50 440v12M283 440v12"/>
+            <path class="dim" d="M36 406V425M31 406h10M31 425h10"/>
+          </svg>
+          <p class="spec__label spec__label--loa"><b data-count="14.30" data-dec="2">14.30</b> m <span data-i18n="spec.loa">length · 47 ft</span> · <span data-i18n="spec.beam">beam</span> <b data-count="7.70" data-dec="2">7.70</b> m</p>
+          <p class="spec__label spec__label--h"><span data-i18n="spec.draft">draft</span> <b data-count="1.20" data-dec="2">1.20</b> m</p>
+        </div>
+        <div class="spec__tabs" id="spec-tabs">
+          <div class="tabs" role="tablist" aria-label="Equipment">
+            <button role="tab" aria-selected="true" aria-controls="tab-power" id="t-power" data-i18n="tab.power">Power &amp; range</button>
+            <button role="tab" aria-selected="false" aria-controls="tab-comfort" id="t-comfort" tabindex="-1" data-i18n="tab.comfort">Comfort</button>
+            <button role="tab" aria-selected="false" aria-controls="tab-galley" id="t-galley" tabindex="-1" data-i18n="tab.galley">Galley</button>
+            <button role="tab" aria-selected="false" aria-controls="tab-toys" id="t-toys" tabindex="-1" data-i18n="tab.toys">Water toys</button>
+            <button role="tab" aria-selected="false" aria-controls="tab-safety" id="t-safety" tabindex="-1" data-i18n="tab.safety">Safety</button>
+          </div>
+          <div class="tabpanel" role="tabpanel" id="tab-power" aria-labelledby="t-power">
+            <dl class="specs">
+              <div><dt data-i18n="s.engines">Engines</dt><dd>2 × 57 hp (42 kW) diesel</dd></div>
+              <div><dt data-i18n="s.cruise">Cruising speed</dt><dd>7–8 kn · max 9 kn</dd></div>
+              <div><dt data-i18n="s.fuel">Fuel</dt><dd>2 × 400 L</dd></div>
+              <div><dt data-i18n="s.water">Fresh water</dt><dd>2 × 400 L</dd></div>
+              <div><dt data-i18n="s.gen">Generator</dt><dd>11 kW</dd></div>
+              <div><dt data-i18n="s.wm">Watermaker</dt><dd>240 L/h</dd></div>
+            </dl>
+          </div>
+          <div class="tabpanel" role="tabpanel" id="tab-comfort" aria-labelledby="t-comfort" hidden>
+            <dl class="specs">
+              <div><dt data-i18n="s.ac">Air conditioning</dt><dd data-i18n="s.acv">Every cabin and the saloon</dd></div>
+              <div><dt>Wi-Fi</dt><dd data-i18n="s.wifiv">High-speed, on board</dd></div>
+              <div><dt data-i18n="s.audio">Sound</dt><dd data-i18n="s.audiov">Fusion HiFi, deck speakers</dd></div>
+              <div><dt data-i18n="s.shade">Shade</dt><dd data-i18n="s.shadev">Flybridge bimini, foredeck awning</dd></div>
+              <div><dt data-i18n="s.cabins">Cabins</dt><dd data-i18n="s.cabinsv">4 double, 1 twin, 1 crew</dd></div>
+              <div><dt data-i18n="s.heads">Bathrooms</dt><dd data-i18n="s.headsv">4 guest en-suites + crew WC</dd></div>
+            </dl>
+          </div>
+          <div class="tabpanel" role="tabpanel" id="tab-galley" aria-labelledby="t-galley" hidden>
+            <dl class="specs">
+              <div><dt data-i18n="s.fridge">Fridge &amp; freezer</dt><dd>615 L</dd></div>
+              <div><dt data-i18n="s.dish">Dishwasher</dt><dd>✓</dd></div>
+              <div><dt data-i18n="s.oven">Oven &amp; microwave</dt><dd>✓</dd></div>
+              <div><dt data-i18n="s.ice">Ice maker</dt><dd>✓</dd></div>
+              <div><dt data-i18n="s.coffee">Coffee</dt><dd>Nespresso</dd></div>
+              <div><dt data-i18n="s.layout">Layout</dt><dd data-i18n="s.layoutv">L-shaped, open to the cockpit</dd></div>
+            </dl>
+          </div>
+          <div class="tabpanel" role="tabpanel" id="tab-toys" aria-labelledby="t-toys" hidden>
+            <dl class="specs">
+              <div><dt data-i18n="s.tender">Tender</dt><dd>Zar Mini 3.8 m · 20 hp</dd></div>
+              <div><dt data-i18n="s.sup">Paddle boards</dt><dd>2 SUP</dd></div>
+              <div><dt data-i18n="s.snork">Snorkel</dt><dd data-i18n="s.snorkv">Full sets</dd></div>
+              <div><dt data-i18n="s.pool">Sea pool</dt><dd data-i18n="s.poolv">Floating, jellyfish-proof</dd></div>
+              <div><dt data-i18n="s.plat">Swim platform</dt><dd data-i18n="s.platv">Hydraulic</dd></div>
+            </dl>
+          </div>
+          <div class="tabpanel" role="tabpanel" id="tab-safety" aria-labelledby="t-safety" hidden>
+            <dl class="specs">
+              <div><dt data-i18n="s.cat">Certification</dt><dd data-i18n="s.catv">CE Category A, ocean</dd></div>
+              <div><dt data-i18n="s.raft">Life raft</dt><dd data-i18n="s.raftv">Commercial class</dd></div>
+              <div><dt data-i18n="s.jackets">Life jackets</dt><dd data-i18n="s.jacketsv">Automatic</dd></div>
+              <div><dt data-i18n="s.nav">Navigation</dt><dd data-i18n="s.navv">Garmin with radar · VHF</dd></div>
+              <div><dt>EPIRB</dt><dd>✓</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LAYOUT ============ -->
+    <section class="layout section">
+      <div class="wrap layout__grid">
+        <div>
+          <h2 class="h2" data-i18n="lay.h">Five guest cabins, a crew cabin of its own</h2>
+          <p class="lead" data-i18n="lay.p">The skipper sleeps in a separate forward cabin with its own deck hatch, so the hulls stay yours. Hover a space to find it on the plan.</p>
+          <ul class="lay__list" id="lay-list">
+            <li data-spot="a"><b data-i18n="lay.a">Aft double, port</b><span data-i18n="lay.ensuite">En-suite</span></li>
+            <li data-spot="b"><b data-i18n="lay.b">Twin cabin</b><span data-i18n="lay.twin">Two single beds</span></li>
+            <li data-spot="c"><b data-i18n="lay.c">Forward double, port</b><span data-i18n="lay.ensuite">En-suite</span></li>
+            <li data-spot="d"><b data-i18n="lay.d">Aft double, starboard</b><span data-i18n="lay.ensuite">En-suite</span></li>
+            <li data-spot="e"><b data-i18n="lay.e">Forward double, starboard</b><span data-i18n="lay.ensuite">En-suite</span></li>
+            <li data-spot="f"><b data-i18n="lay.f">Crew cabin</b><span data-i18n="lay.crew">Forward starboard, own access</span></li>
+            <li data-spot="g"><b data-i18n="lay.g">Saloon &amp; galley</b><span data-i18n="lay.open">Open Space</span></li>
+            <li data-spot="h"><b data-i18n="lay.h2">Foredeck lounge</b><span data-i18n="lay.rigid">Sofas instead of nets</span></li>
+          </ul>
+        </div>
+        <div class="plan-map" id="plan-map">
+          <img src="assets/img/layout.webp" alt="Deck plan of the Bali 4.6 five-cabin layout, bow to the right" loading="lazy" width="1260" height="710">
+          <span class="spot" data-spot="a" style="--x:33%;--y:20%"></span>
+          <span class="spot" data-spot="b" style="--x:45.5%;--y:20%"></span>
+          <span class="spot" data-spot="c" style="--x:74%;--y:18%"></span>
+          <span class="spot" data-spot="d" style="--x:21%;--y:80%"></span>
+          <span class="spot" data-spot="e" style="--x:72%;--y:80%"></span>
+          <span class="spot" data-spot="f" style="--x:87%;--y:80%"></span>
+          <span class="spot" data-spot="g" style="--x:46%;--y:47%"></span>
+          <span class="spot" data-spot="h" style="--x:88%;--y:48%"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RESERVE CTA ============ -->
+    <section class="reserve" aria-labelledby="reserve-h">
+      <div class="reserve__bg" aria-hidden="true"><img src="assets/img/sail-open.webp" alt="" loading="lazy"></div>
+      <div class="reserve__inner">
+        <p class="kicker kicker--light" data-i18n="res.kicker">Closed price, skipper included</p>
+        <h2 class="h2" id="reserve-h" data-i18n="res.h">Reserve your days aboard Melkart I</h2>
+        <p data-i18n="res.p">Day charter from 2,500 € all-inclusive · weeks from 8,800 €</p>
+        <a class="btn btn--light magnetic" href="#book" data-i18n="cta.book">Book now</a>
+      </div>
+    </section>
+
+    <!-- ============ LIFE ABOARD (cards carousel) ============ -->
+    <section class="life section">
+      <div class="wrap life__head">
+        <h2 class="h2" data-i18n="life.h">Life aboard, hour by hour</h2>
+        <div class="life__nav">
+          <button type="button" class="round" id="life-prev" aria-label="Previous"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+          <button type="button" class="round" id="life-next" aria-label="Next"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+        </div>
+      </div>
+      <div class="life__rail" id="life-rail">
+        <article class="card"><div class="card__img"><img src="assets/img/stove.webp" alt="" loading="lazy"></div><p class="card__time">08:00</p><h3 data-i18n="l.1h">Coffee on the hob</h3><p class="card__meta" data-i18n="l.1p">Nespresso or moka, sunrise from the cockpit</p></article>
+        <article class="card"><div class="card__img"><img src="assets/img/foredeck-tall.webp" alt="" loading="lazy"></div><p class="card__time">10:30</p><h3 data-i18n="l.2h">First anchorage</h3><p class="card__meta" data-i18n="l.2p">Hydraulic platform down, paddle boards out</p></article>
+        <article class="card"><div class="card__img"><img src="assets/img/salon.webp" alt="" loading="lazy"></div><p class="card__time">14:00</p><h3 data-i18n="l.3h">Long lunch</h3><p class="card__meta" data-i18n="l.3p">Table for ten, glass door up, sea breeze through</p></article>
+        <article class="card"><div class="card__img"><img src="assets/img/helm-wide.webp" alt="" loading="lazy"></div><p class="card__time">17:00</p><h3 data-i18n="l.4h">Sail to the next cove</h3><p class="card__meta" data-i18n="l.4p">7–8 knots, the skipper at the flybridge helm</p></article>
+        <article class="card"><div class="card__img"><img src="assets/img/boom.webp" alt="" loading="lazy"></div><p class="card__time">20:30</p><h3 data-i18n="l.5h">Sunset on the flybridge</h3><p class="card__meta" data-i18n="l.5p">Fusion HiFi on, ice from the ice maker</p></article>
+        <article class="card"><div class="card__img"><img src="assets/img/cabin-portrait.webp" alt="" loading="lazy"></div><p class="card__time">23:00</p><h3 data-i18n="l.6h">Quiet, cool cabins</h3><p class="card__meta" data-i18n="l.6p">Air conditioning on the 11 kW generator</p></article>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="faq section" id="faq">
+      <div class="wrap faq__grid">
+        <h2 class="h2" data-i18n="faq.h">Before you ask</h2>
+        <div class="faq__list">
+          <details><summary data-i18n="faq.1q">Is the skipper included?</summary><p data-i18n="faq.1a">Yes. Melkart I is only chartered with a professional skipper, and the skipper is included in the price.</p></details>
+          <details><summary data-i18n="faq.2q">What does the day charter include?</summary><p data-i18n="faq.2a">The 2,500 € day price covers the skipper, fuel, cleaning and base-port fees. Up to 10 guests plus the skipper.</p></details>
+          <details><summary data-i18n="faq.3q">Why can't I book in October or May?</summary><p data-i18n="faq.3a">Those are the months she crosses the Atlantic: to Nassau in October and back to Mallorca in May. The calendar stays blocked in case of delays at sea.</p></details>
+          <details><summary data-i18n="faq.4q">How many people can sleep aboard?</summary><p data-i18n="faq.4a">Ten guests in five cabins: four doubles and one twin. The skipper has a separate crew cabin.</p></details>
+          <details><summary data-i18n="faq.5q">Which toys are on board?</summary><p data-i18n="faq.5a">A 3.8 m Zar Mini tender with a 20 hp outboard, two paddle boards, snorkel sets and a floating, jellyfish-proof sea pool.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BOOK ============ -->
+    <section class="book section" id="book">
+      <div class="wrap book__grid">
+        <div class="book__intro">
+          <h2 class="h2" data-i18n="book.h">Tell us your dates</h2>
+          <p class="lead" data-i18n="book.p">We'll confirm availability and the exact price for your week or day. Send it on WhatsApp for the fastest reply, or by email.</p>
+          <ul class="book__contact">
+            <li><a id="c-wa" href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7z"/><path d="M9 9.5c.3 2 2.5 4.2 4.5 4.5l1-1.2 1.8.8-.4 1.6c-3.3.4-7.4-3.7-7-7l1.6-.4.8 1.8z"/></svg><span id="c-wa-label">WhatsApp</span></a></li>
+            <li><a id="c-mail" href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3z"/><path d="M3 7l9 6 9-6"/></svg><span id="c-mail-label">email</span></a></li>
+          </ul>
+        </div>
+        <form class="book__form" id="book-form" novalidate>
+          <div class="field"><input id="b-name" name="name" required placeholder=" " autocomplete="name"><label for="b-name" data-i18n="f.name">Full name</label><small class="err" data-i18n="f.errname">Tell us your name</small></div>
+          <div class="field"><input id="b-email" name="email" type="email" required placeholder=" " autocomplete="email"><label for="b-email" data-i18n="f.email">Email</label><small class="err" data-i18n="f.erremail">Enter a valid email so we can reply</small></div>
+          <div class="field field--half"><input id="b-date" name="date" type="date" required placeholder=" "><label for="b-date" data-i18n="f.date">Start date</label><small class="err" data-i18n="f.errdate">Choose a date</small></div>
+          <div class="field field--half">
+            <select id="b-plan" name="plan"><option value="week" data-i18n="plan.week">Week charter</option><option value="day" data-i18n="plan.day">Day charter</option></select>
+            <label for="b-plan" class="up" data-i18n="f.plan">Charter</label>
+          </div>
+          <div class="field field--half">
+            <select id="b-guests" name="guests"><option>2</option><option>3</option><option>4</option><option>5</option><option selected>6</option><option>7</option><option>8</option><option>9</option><option>10</option></select>
+            <label for="b-guests" class="up" data-i18n="f.guests">Guests</label>
+          </div>
+          <div class="field field--half field--quote" aria-live="polite"><span class="up" data-i18n="f.quote">Estimate</span><output id="b-quote">—</output></div>
+          <div class="field"><textarea id="b-msg" name="msg" rows="3" placeholder=" "></textarea><label for="b-msg" data-i18n="f.msg">Anything we should know? (optional)</label></div>
+          <p class="book__warn" id="b-warn" hidden></p>
+          <div class="book__actions">
+            <button class="btn btn--dark" type="submit" data-via="wa"><span data-i18n="f.wa">Send on WhatsApp</span></button>
+            <button class="btn btn--ghost" type="submit" data-via="mail"><span data-i18n="f.mail">Send by email</span></button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="wrap footer__top">
+      <p class="footer__claim" data-i18n="foot.claim">Summers in Portocolom, winters in Nassau, and the Atlantic in between.</p>
+      <a class="btn btn--light" href="#book" data-i18n="foot.cta">Let's talk</a>
+    </div>
+    <div class="wrap footer__cols">
+      <div><h3 data-i18n="foot.explore">Explore</h3><a href="#yacht" data-i18n="nav.yacht">The yacht</a><a href="#plans" data-i18n="nav.plans">Charters</a><a href="#where" data-i18n="nav.where">Where is she?</a><a href="#rates" data-i18n="nav.rates">Rates</a></div>
+      <div><h3 data-i18n="foot.bases">Bases</h3><p>Portocolom, Mallorca <small data-i18n="foot.summer">Jun – Sep</small></p><p>Nassau, Bahamas <small data-i18n="foot.winter">Nov – Apr</small></p></div>
+      <div><h3 data-i18n="foot.contact">Contact</h3><a id="f-mail" href="#">email</a><a id="f-wa" href="#">WhatsApp</a></div>
+    </div>
+    <div class="footer__mark" aria-hidden="true"><img src="assets/img/logo-white.webp" alt="" loading="lazy"></div>
+    <div class="wrap footer__base">
+      <p>© <span id="year-now">2026</span> Melkart Náutica</p>
+      <p data-i18n="foot.boat">Melkart I · Bali 4.6 · Spanish flag</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.3.4/dist/lenis.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js" defer></script>
+  <script src="js/i18n.js" defer></script>
+  <script src="js/calendar.js" defer></script>
+  <script src="js/globe.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
