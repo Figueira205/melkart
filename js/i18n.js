@@ -14,7 +14,7 @@ window.MK_I18N = (() => {
     'about.h1': 'Un barco nuevo y un precio cerrado,', 'about.h2': 'sin sorpresas en el muelle.',
     'about.p': 'Melkart Náutica nació en 2022 alrededor de un solo barco. Operamos Melkart I como chárter privado con patrón: el capitán, el combustible, la limpieza y las tasas del puerto base van incluidos en el precio de día, así que tú eliges las calas, no los extras.',
     'about.f1': 'Construido', 'about.f2': 'Invitados', 'about.f3': 'Certificado', 'about.f3v': 'CE A · Oceánica',
-    'about.link': 'Conoce Melkart I', 'about.cap': 'Esa es ella: Melkart I',
+    'about.link': 'Conoce Melkart I', 'about.cap': 'Este es Melkart I',
     'why.kicker': 'Por qué Melkart I', 'why.h': 'Todo a bordo, un precio cerrado',
     'why.1h': 'Patrón incluido', 'why.1p': 'Un capitán profesional en cada chárter. En los chárters de día también van incluidos el combustible, la limpieza y las tasas del puerto base.',
     'why.2h': 'Vida en Open Space', 'why.2p': 'La puerta de cristal de popa se eleva y une salón, cocina y bañera en una sola cubierta, con zona lounge a proa y flybridge arriba.',
