@@ -214,6 +214,8 @@ html { scrollbar-color: #b9b4ab transparent; scrollbar-width: thin; }
 @media (prefers-reduced-motion: no-preference) {
   .plans { display: flow-root; }
   .plan { margin-bottom: 45svh; }
+  /* el último no tiene un panel que lo tape despacio al salir, así que necesita más pausa para sentirse igual */
+  .plan:last-child { margin-bottom: 80svh; }
 }
 .plan__media { position: relative; overflow: hidden; }
 .plan__media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transform: scale(1.12); }
