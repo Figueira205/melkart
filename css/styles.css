@@ -210,6 +210,11 @@ html { scrollbar-color: #b9b4ab transparent; scrollbar-width: thin; }
 .plan::after { content: ""; position: absolute; inset: 0; background: var(--ink); opacity: var(--dim, 0); pointer-events: none; }
 .plan:nth-child(2) { background: #f0eee9; }
 .plan:nth-child(3) { background: #ebe9e3; }
+/* Pausa de lectura: cada panel se queda fijo y completo durante un tramo de scroll antes de que llegue el siguiente */
+@media (prefers-reduced-motion: no-preference) {
+  .plans { display: flow-root; }
+  .plan { margin-bottom: 45svh; }
+}
 .plan__media { position: relative; overflow: hidden; }
 .plan__media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transform: scale(1.12); }
 .plan__body { display: flex; flex-direction: column; justify-content: center; padding: 80px clamp(28px, 7vw, 120px) 60px; max-width: 720px; }
